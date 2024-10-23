@@ -1,0 +1,29 @@
+body {
+  margin: 800px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: rgb(235, 235, 235);
+  color: rgb(19, 19, 19);
+  border-radius: 100px;
+  padding: 40px;
+  font-size: 150%;
+}
+
+.coolparagraph {
+  padding: 80px;
+  background-color: rgb(247, 247, 247);
+  color: rgb(0, 56, 121);
+  max-width: 1000px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}

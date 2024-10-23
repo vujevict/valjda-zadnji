@@ -1,0 +1,44 @@
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.box {
+  background-color: rgb(235, 235, 235);
+  color: rgb(19, 19, 19);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.coolparagraph {
+  padding: 20px;
+  background-color: rgb(247, 247, 247);
+  color: rgb(0, 56, 121);
+  max-width: 800px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+img{max-width: 300px;}

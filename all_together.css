@@ -1,0 +1,125 @@
+html{
+
+}
+
+body {
+  margin: 40px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.wrapper{
+  max-width: 2000px;
+  margin: auto;
+}
+
+.content {
+  display: grid;
+  column-gap: 20px;
+    row-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows:100px 1fr auto;
+  grid-template-areas:
+    "head"
+    "side"
+    "main"
+    "foot";
+}
+
+h1{
+  font-size: 26px;
+}
+
+@media only screen and (min-width: 1000px) {
+  h1{
+    font-size: 36px;
+  }
+  
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "head head head"
+      "side main main"
+      "foot foot foot";
+  }
+}
+
+.box{
+  background-color: #ffffff;
+  border-radius: 20px;
+  border:2px solid black;
+  padding: 70px;
+}
+
+.head {
+  grid-area: head;
+  padding: 5px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar{
+  grid-area: side;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personalimage{
+  grid-area: side;
+}
+
+.personalimage img{
+  max-width: 200px;
+  border: 2px solid;
+  border-radius: 40px;
+}
+
+.personaldetailitem{
+  font-size: 16x;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+
+.experience{
+  grid-area: main;
+  padding: 10px;
+}
+
+.experienceitem{
+  margin: 60px 0;
+
+}
+
+.experienceheader{
+  margin-bottom: 45px;
+}
+
+.experiencedate{
+  background-color: rgb(238, 238, 238);
+  font-size: 16x;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.experiencetitle{
+  font-size: 16x;
+  font-weight: 700;
+}
+
+.foot{
+  grid-area: foot;
+  padding: 20px;
+
+}
+
+
+img {
+  max-width: 300px;
+}
